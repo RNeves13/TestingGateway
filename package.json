@@ -4,7 +4,7 @@
   "description": "Gateway for an application used to test Defektor",
   "main": "index.ts",
   "scripts": {
-    "start": "node dist/server.js",
+    "start": "NOTIFICATIONS_PORT=7001 && node dist/server.js",
     "build": "tsc"
   },
   "author": "Rui Neves",

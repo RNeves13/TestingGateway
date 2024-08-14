@@ -1,4 +1,3 @@
-
 export async function secureRequest(link: string, params: RequestInit | null, method: string) {
     switch(method){
         case "GET":
@@ -22,7 +21,7 @@ async function secureGet(link: string, params: RequestInit | null){
         const json = await response.json();
         return json;
     }catch(e: any){
-        console.error(e.message);
+        console.log(e.message);
         return null;
     }
 }
