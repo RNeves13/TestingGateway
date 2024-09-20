@@ -8,6 +8,10 @@ COPY package*.json ./
 
 RUN npm install
 
+# TRACING
+RUN npm install --save @opentelemetry/api
+RUN npm install --save @opentelemetry/auto-instrumentations-node
+
 COPY --chown=node:node . .
 
 EXPOSE 3000

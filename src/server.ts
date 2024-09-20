@@ -1,7 +1,7 @@
 import express from 'express';
 import cors from "cors";
 import {json} from "body-parser";
-import {router as Notifications} from "./routes/notifications/admin_notifications";
+import {router as Notifications} from "./routes/publicitaki/notifications";
 
 const app = express();
 
